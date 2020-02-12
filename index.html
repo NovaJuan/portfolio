@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Juan Romero's Portfolio | Node.js and React.js Web Developer</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/6b4b6df8f6.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="navbar">
+					<h3>Juan Romero</h3>
+
+					<button class="toggle-navbar">
+						<i class="fas fa-bars"></i>
+					</button>
+
+					<ul class="navbar-ul">
+						<li class="navbar-li"><a href="#about">About Me</a></li>
+						<li class="navbar-li"><a href="#projects">Projects</a></li>
+						<li class="navbar-li"><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="header-text">
+					<h1>Juan Romero</h1>
+					<p class="hide-sm">
+						Node.js & React Web Developer / Wordpress Developer / MERN Stack
+						Developer
+					</p>
+					<p class="show-sm">WEB DEVELOPER</p>
+					<a href="#projects" class="header-btn">My Projects</a>
+					<a href="#contact" class="header-btn">Contact</a>
+					<a
+						href="https://www.upwork.com/o/profiles/users/~01eaad11de88628224/"
+						class="header-btn"
+						>Hire Me</a
+					>
+				</div>
+			</div>
+		</header>
+
+		<section class="about">
+			<div class="container">
+				<div class="about-grid">
+					<div class="about-text">
+						<h2>Who Am I?</h2>
+						<p class="first">
+							Hi, my name is Juan Romero and I am a Node.js & React.js
+							specialist... but I know Wordpress Development too. I have been
+							working as a web designer for some companies on my local area.
+						</p>
+						<p>
+							I have two passions: cars and programming. I program since I was
+							13 years old and always had a strong love with it.
+						</p>
+					</div>
+					<div class="spacer"></div>
+					<div class="about-img">
+						<img src="/images/about-img.jpg" alt="About me image" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects">
+			<div class="container">
+				<h2>My Projects</h2>
+				<div class="projects-grid">
+					<div class="project">
+						<img src="/images/page1.jpg" class="project-img" alt="" />
+						<div class="project-content">
+							<a href="https://novajuan.github.io/accounting-lx-design/"
+								>View Demo</a
+							>
+						</div>
+					</div>
+					<div class="project">
+						<img src="/images/page2.jpg" class="project-img" alt="" />
+						<div class="project-content">
+							<a href="https://novajuan.github.io/PsicoHealthy/">View Demo</a>
+						</div>
+					</div>
+					<div class="project">
+						<img src="/images/page3.jpg" class="project-img" alt="" />
+						<div class="project-content">
+							<a href="https://novajuan.github.io/automotriz5k/">View Demo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="contact">
+			<div class="container">
+				<div class="contact-grid">
+					<a class="email" href="mailto:juan.romero.dev@gmail.com">
+						<strong>Email: </strong>juan.romero.dev@gmail.com
+					</a>
+					<a
+						class="hire"
+						href="https://www.upwork.com/o/profiles/users/~01eaad11de88628224/"
+					>
+						HIRE ME
+					</a>
+				</div>
+				<ul class="social">
+					<li>
+						<a href=""><i class="fab fa-linkedin"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-github-square"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-twitter-square"></i></a>
+					</li>
+				</ul>
+				<p class="copy">&copy; JUAN ROMERO. ALL RIGHTS RESERVED</p>
+			</div>
+		</footer>
+
+		<script>
+			const navbarBtn = document.querySelector('.toggle-navbar');
+			const navbar = document.querySelector('.navbar-ul');
+
+			navbarBtn.addEventListener('click', function(e) {
+				navbar.classList.toggle('show-navbar');
+			});
+		</script>
+	</body>
+</html>
