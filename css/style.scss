@@ -53,6 +53,10 @@ p {
 		font-size: 2rrem;
 	}
 
+	.navbar-img {
+		width: 3rem;
+	}
+
 	.navbar-ul {
 		list-style: none;
 	}
@@ -122,7 +126,6 @@ p {
 	p {
 		margin-bottom: 1rem;
 		color: #787878;
-		text-align: justify;
 		line-height: 2rem;
 	}
 
@@ -174,10 +177,12 @@ p {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		opacity: 0;
 		transition: all 0.1s ease-in-out;
 
 		a {
+			margin: 1rem 0;
 			color: #ffffff;
 			font-weight: 800;
 			text-decoration: none;
